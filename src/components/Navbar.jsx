@@ -8,7 +8,7 @@ const Navbar = () => {
   const navigate=useNavigate()
   useEffect(() => {
     dispatch(fetchStockData());
-  }, []);
+  }, [dispatch]);
   return (
     <div className=" py-0 bg-slate-800 flex  items-center px-20 text-yellow-300 font-bold text-2xl h-16 sticky top-0 left-0">
       <div className="hover:cursor-pointer" onClick={()=>navigate("/")}>StocksMania</div>
